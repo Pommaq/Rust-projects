@@ -12,5 +12,5 @@ fn piggify(wat: &str) -> String {
 }
 
 fn main() {
-    println!("{}",piggify("BIsNotFIne"));
+    println!("{}", piggify("BIsNotFIne"));
 }
