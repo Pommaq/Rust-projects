@@ -1,4 +1,8 @@
 fn piggify(wat: &str) -> String {
+    if wat.is_empty() {
+        return "".to_string();
+    }
+
     let vowels: &str = "AEIOU";
 
     let first_character = wat.chars().next().unwrap();
