@@ -2,8 +2,8 @@ fn piggify(wat: &str) -> String {
     if wat.is_empty() {
         return "".to_string();
     }
-
-    let vowels: &str = "AEIOU";
+    // Its implicitly static, but lets be explicit
+    let vowels: &'static str = "AEIOU";
 
     let first_character = wat.chars().next().unwrap();
     if vowels.contains(first_character) {

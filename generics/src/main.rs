@@ -27,6 +27,7 @@ fn _mixup_test() {
 
 
 // fn largest(lisT: &impl std::cmp::PartialOrd) -> T
+// fn largest<T, list: &[T]) -> T where T: PartialOrd + Copy {
 fn largest<T: PartialOrd + Copy>(list: &[T]) -> T {
     /*
     In the body of largest we wanted to compare two values of type T using the greater than
